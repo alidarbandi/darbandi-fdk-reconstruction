@@ -9,6 +9,7 @@ QT_BACKEND = ""
 try:
     os.environ.setdefault("QT_API", "pyside6")
     from PySide6.QtCore import QObject, QThread, QTimer, Qt, Signal, Slot
+    from PySide6.QtGui import QIcon
     from PySide6.QtWidgets import (
         QApplication,
         QCheckBox,
@@ -45,6 +46,7 @@ except Exception:
             sys.modules.pop(module_name, None)
     os.environ["QT_API"] = "pyqt5"
     from PyQt5.QtCore import QObject, QThread, QTimer, Qt, pyqtSignal as Signal, pyqtSlot as Slot
+    from PyQt5.QtGui import QIcon
     from PyQt5.QtWidgets import (
         QApplication,
         QCheckBox,

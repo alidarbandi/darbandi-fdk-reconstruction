@@ -38,6 +38,7 @@ from .qt_compat import (
     QObject,
     QThread,
     QTimer,
+    QIcon,
     QT_BACKEND,
     Qt,
     Signal,
@@ -91,6 +92,7 @@ from .tigre_reconstruction import GeometryParams, computed_detector_pixel_mm, ru
 
 
 ASSETS_DIR = Path(__file__).resolve().parent / "assets"
+APP_ICON_PATH = ASSETS_DIR / "app_icon.ico"
 COMBO_DOWN_ARROW_PATH = (ASSETS_DIR / "combo_down_arrow.xpm").as_posix()
 SPIN_UP_ARROW_PATH = (ASSETS_DIR / "spin_up_arrow.xpm").as_posix()
 SPIN_DOWN_ARROW_PATH = (ASSETS_DIR / "spin_down_arrow.xpm").as_posix()
@@ -496,6 +498,8 @@ class MicroCTReconstructionWindow(QMainWindow):
     def __init__(self) -> None:
         super().__init__()
         self.setWindowTitle("Darbandi FDK reconsturction")
+        if APP_ICON_PATH.exists():
+            self.setWindowIcon(QIcon(str(APP_ICON_PATH)))
         self.resize(1480, 900)
         self.setMinimumSize(1180, 720)
 

@@ -13,6 +13,13 @@ __pycache__/
 venv/
 env/
 
+# Build and release artifacts
+build/
+dist/
+windows_release/
+windows_release_debug/
+*.spec
+
 # Local IDE/project state
 .vscode/
 
