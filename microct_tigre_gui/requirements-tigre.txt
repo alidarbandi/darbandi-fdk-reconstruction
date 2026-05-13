@@ -1,0 +1,4 @@
+# Optional CERN/TIGRE source install. This requires CUDA/NVCC and a C++ compiler.
+# On Windows, CERN/TIGRE also documents the unofficial conda package:
+#   conda install -c ccpi tigre
+https://github.com/CERN/TIGRE/archive/refs/heads/master.zip

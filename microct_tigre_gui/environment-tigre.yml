@@ -1,0 +1,18 @@
+name: tomogram-recon-tigre
+channels:
+  - ccpi
+  - astra-toolbox
+  - nvidia
+  - defaults
+dependencies:
+  - python=3.10
+  - numpy=1.26
+  - scipy
+  - pandas
+  - tifffile
+  - matplotlib
+  - scikit-image
+  - opencv
+  - pyqt=5
+  - tigre=2.6
+  - pip

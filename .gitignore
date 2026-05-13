@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local IDE/project state
+.vscode/
+
+# Application-generated local state
+microct_tigre_gui/.recent_config_path
+processing_log.txt
+geometry_sanity_report.txt
+center_offset_search_metrics.csv
+
+# Large CT data and generated outputs
+*.tif
+*.tiff
+*.txrm
+*.xrm
+*.raw
+*.npy
+*.npz
+output*/
+outputs/
+reconstruction_stack/
+transmission_stack/
+attenuation_stack/
+shift_debug/
+shift_mode_tests/
+
+# OS files
+Thumbs.db
+.DS_Store

@@ -1,0 +1,14 @@
+numpy
+scipy
+pandas
+tifffile
+matplotlib
+PySide6
+scikit-image
+opencv-python
+
+# CERN/TIGRE is not installed from the PyPI package named "tigre";
+# that PyPI package is a non-CT placeholder. Install TIGRE separately:
+#   conda install -c ccpi tigre
+# or, with CUDA/NVCC and MSVC available on Windows:
+#   python -m pip install https://github.com/CERN/TIGRE/archive/refs/heads/master.zip

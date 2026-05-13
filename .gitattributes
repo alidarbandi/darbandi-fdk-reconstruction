@@ -1,0 +1,9 @@
+* text=auto eol=lf
+
+*.tif binary
+*.tiff binary
+*.txrm binary
+*.xrm binary
+*.raw binary
+*.npy binary
+*.npz binary
